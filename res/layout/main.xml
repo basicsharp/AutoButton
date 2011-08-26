@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="AutoImageButton"
+    />
+    
+    <com.androiddevclub.autobutton.AutoImageButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/icon"
+    	android:background="@android:color/transparent"
+    />
+    
+    <com.androiddevclub.autobutton.AutoButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@android:color/transparent"
+    	android:drawableLeft="@drawable/icon"
+    	android:text="AutoButton with transparent background"
+    	android:textColor="@color/autobutton_text_color"
+    />
+    
+    <com.androiddevclub.autobutton.AutoButton
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/btn_orange"
+    	android:drawableLeft="@drawable/icon"
+    	android:text="AutoButton with a 9-patch drawable bg"
+    	android:textColor="@color/autobutton_text_color"
+    />
+    
+</LinearLayout>
