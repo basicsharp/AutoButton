@@ -3,6 +3,7 @@ package com.androiddevclub.autobutton;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.widget.Button;
 
 public class AutoButton extends Button {
@@ -39,7 +40,29 @@ public class AutoButton extends Button {
 				}
 				setCompoundDrawables(compoundDrawables[0], compoundDrawables[1], compoundDrawables[2], compoundDrawables[3]);
 			}
+			
+			/*int[] enabledState = new int[]{android.R.attr.state_enabled};
+			int[] pressedState = new int[]{android.R.attr.state_pressed, android.R.attr.state};
+			
+			int currentColor = getTextColors().getDefaultColor();
+			
+			float[] hsv = new float[3];
+			Color.colorToHSV(currentColor, hsv);
+			hsv[2] *= 0.1f;
+			int darkerColor = Color.HSVToColor(hsv);
+			
+			ColorStateList colors = new ColorStateList(new int[][]{enabledState, pressedState},
+					new int[]{currentColor, darkerColor});
+			setTextColor(colors);*/
 		}
 	}
+
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		
+		return super.onTouchEvent(event);
+	}
+	
+	
 	
 }
